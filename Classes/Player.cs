@@ -9,6 +9,7 @@ namespace Classes
     {
         //Fields
         private string name;
+        private int score;
 
         //Properties
         public string Name
@@ -17,11 +18,18 @@ namespace Classes
             set { this.name = value; }
         }
 
+        public int Score
+        {
+            get { return this.score; }
+            set { this.score = value; }
+        }
+
         // Constructor van de class Player (heeft dezelfde naam als de class en geen returntype
         // Dus ook geen void!
-        public Player(string name)
+        public Player(string name, int score)
         {
             this.name = name;
+            this.score = score;
         }
     }
 }
