@@ -73,17 +73,17 @@ namespace Classes
             return text;
         }
 
-        public void ScorePlus()
+        public void ScorePlus(int points)
         {
             Console.Clear();
-            this.score += 10;
+            this.score += points;
             Console.WriteLine(this.Draw());
         }
 
-        public void ScoreMinus()
+        public void ScoreMinus(int points)
         {
             Console.Clear();
-            this.score -= 10;
+            this.score -= points;
             Console.WriteLine(this.Draw());
         }
     }

@@ -38,11 +38,11 @@ namespace Classes
                 
                 if (cki.Key == ConsoleKey.UpArrow)
                 {
-                    harry.ScorePlus();
+                    harry.ScorePlus(100);
                 }
                 if (cki.Key == ConsoleKey.DownArrow)
                 {
-                    harry.ScoreMinus();
+                    harry.ScoreMinus(100);
                 }
                 
 
