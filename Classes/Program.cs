@@ -9,6 +9,7 @@ namespace Classes
     {
         static void Main(string[] args)
         {
+            ConsoleKeyInfo cki;            
             
             Player arjan, bert, harry;
 
@@ -24,16 +25,30 @@ namespace Classes
             harry = new Player("Harry de Groot", 1200);
             //harry.name = "Harry de Groot";
 
-
-
             Console.WriteLine("{0} heeft als score: {1}", arjan.Name, arjan.Score);
             Console.WriteLine("{0} heeft als score: {1}", bert.Name, bert.Score);
             Console.WriteLine("{0} heeft als score: {1}", harry.Name, harry.Score);
             Console.WriteLine(arjan.Draw());
             Console.WriteLine(bert.Draw());
             Console.WriteLine(harry.Draw());
+            
+            do
+            {                
+                cki = Console.ReadKey();
+                
+                if (cki.Key == ConsoleKey.UpArrow)
+                {
+                    harry.ScorePlus();
+                }
+                if (cki.Key == ConsoleKey.DownArrow)
+                {
+                    harry.ScoreMinus();
+                }
+                
 
-            Console.ReadLine();
+            } while (cki.Key != ConsoleKey.Escape);
+            
+            Environment.Exit(0);
         }
     }
 }

@@ -36,7 +36,7 @@ namespace Classes
         {
             string tekst = "";
             tekst += "Mijn naam is " + this.name + 
-                        " en ik heb in dit spel een score van: " + this.score + this.Cheer();
+                        " en ik heb in dit spel een score van: " + this.score + "\n" + this.Cheer();
             return tekst;
         }
 
@@ -48,30 +48,43 @@ namespace Classes
 
             if (this.score < 500)
             {
-                text += " Conclusie: Je bent niet zo goed!";
+                text += "Conclusie: Je bent niet zo goed!";
             }
             else if (this.score >= 500 && this.score < 1000)
             {
-                text += " Conclusie: Ga zo door";
+                text += "Conclusie: Ga zo door";
             }
             else if (this.score >= 1000 && this.score < 1500)
             {
-                text += " Conclusie: Het begint er op te lijken";
+                text += "Conclusie: Het begint er op te lijken";
             }
             else if (this.score >= 1500 && this.score < 2000)
             {
-                text += " Conclusie: Dit gaat prima!";
+                text += "Conclusie: Dit gaat prima!";
             }
             else if (this.score >= 2000 && this.score < 2500)
             {
-                text += " Conclusie: Je bent een professional";
+                text += "Conclusie: Je bent een professional";
             }
             else
             {
                 text += "Je behoort tot de buitencategorie";
             }
-
             return text;
+        }
+
+        public void ScorePlus()
+        {
+            Console.Clear();
+            this.score += 10;
+            Console.WriteLine(this.Draw());
+        }
+
+        public void ScoreMinus()
+        {
+            Console.Clear();
+            this.score -= 10;
+            Console.WriteLine(this.Draw());
         }
     }
 }
