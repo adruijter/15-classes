@@ -7,11 +7,12 @@ namespace Classes
 {
     public class Player
     {
-        //Fields
+        //Fields zijn worden altijd private gehouden
+        private static int amountOfObjects = 0;
         private string name;
         private int score;
 
-        //Properties
+        //Properties zijn altijd public
         public string Name
         {
             get { return this.name; }
@@ -24,12 +25,21 @@ namespace Classes
             set { this.score = value; }
         }
 
+        public static int AmountOfObjects
+        {
+            get { return Player.amountOfObjects; }
+            set { Player.amountOfObjects = value; }
+        }
+
+
+
         // Constructor van de class Player (heeft dezelfde naam als de class en geen returntype
         // Dus ook geen void!
         public Player(string name, int score)
         {
             this.name = name;
             this.score = score;
+            Player.amountOfObjects += 1;
         }
 
         public string Draw()
@@ -76,15 +86,23 @@ namespace Classes
         public void ScorePlus(int points)
         {
             Console.Clear();
-            this.score += points;
+            if (this.score < 5000)
+            {
+                this.score += points;
+            }
             Console.WriteLine(this.Draw());
         }
 
         public void ScoreMinus(int points)
         {
             Console.Clear();
-            this.score -= points;
+            if (this.score > 0)
+            {
+                this.score -= points;
+            }
             Console.WriteLine(this.Draw());
         }
+
+
     }
 }

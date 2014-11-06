@@ -17,11 +17,11 @@ namespace Classes
             arjan = new Player("Arjen de Ruijter", 600);
             //arjan.name = "Arjan de Ruijter";
             arjan.Name = "Arjan de Ruijter";
-
+            
 
             bert = new Player("Bert de Vries", 200);
             //bert.name = "Bert de Vries";
-
+            
             harry = new Player("Harry de Groot", 1200);
             //harry.name = "Harry de Groot";
 
@@ -31,7 +31,10 @@ namespace Classes
             Console.WriteLine(arjan.Draw());
             Console.WriteLine(bert.Draw());
             Console.WriteLine(harry.Draw());
-            
+
+            Console.WriteLine("Het aantal objecten van de class Player is: " + Player.AmountOfObjects.ToString());
+            //Player.AmountOfObjects -= 1;
+
             do
             {                
                 cki = Console.ReadKey();
@@ -44,6 +47,7 @@ namespace Classes
                 {
                     harry.ScoreMinus(100);
                 }
+
                 
 
             } while (cki.Key != ConsoleKey.Escape);
