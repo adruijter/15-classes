@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{BBEF7F06-35F8-449E-8302-E85B376C4BC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Design_Pattern", "Singleton_Design_Pattern\Singleton_Design_Pattern.csproj", "{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{BBEF7F06-35F8-449E-8302-E85B376C4BC6}.Debug|x86.Build.0 = Debug|x86
 		{BBEF7F06-35F8-449E-8302-E85B376C4BC6}.Release|x86.ActiveCfg = Release|x86
 		{BBEF7F06-35F8-449E-8302-E85B376C4BC6}.Release|x86.Build.0 = Release|x86
+		{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}.Debug|x86.ActiveCfg = Debug|x86
+		{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}.Debug|x86.Build.0 = Debug|x86
+		{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}.Release|x86.ActiveCfg = Release|x86
+		{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
