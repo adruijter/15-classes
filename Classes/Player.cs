@@ -103,6 +103,27 @@ namespace Classes
             Console.WriteLine(this.Draw());
         }
 
+        public static void IncreaseAmountOfObjects()
+        {
+            Console.Clear();
+            if (amountOfObjects < 42)
+            {
+                Player.amountOfObjects += 1;
+            }
+            Console.WriteLine("Het aantal objecten bedraagt nu: " 
+                                    + Player.amountOfObjects.ToString());
+        }
 
+        public static void DecreaseAmountOfObjects()
+        {
+            Console.Clear();
+            if (amountOfObjects > 0)
+            {
+                Player.amountOfObjects -= 1;
+            }
+            Console.WriteLine("Het aantal objecten bedraagt nu: "
+                                    + Player.amountOfObjects.ToString());
+
+        }
     }
 }

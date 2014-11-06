@@ -39,6 +39,7 @@ namespace Classes
             {                
                 cki = Console.ReadKey();
                 
+                /*
                 if (cki.Key == ConsoleKey.UpArrow)
                 {
                     harry.ScorePlus(100);
@@ -47,8 +48,23 @@ namespace Classes
                 {
                     harry.ScoreMinus(100);
                 }
-
-                
+                if (cki.Key == ConsoleKey.U)
+                {
+                    Player.IncreaseAmountOfObjects();
+                }
+                if (cki.Key == ConsoleKey.D)
+                {
+                    Player.DecreaseAmountOfObjects();
+                } 
+                */
+                switch (cki.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        harry.ScorePlus(100);
+                        break;
+                    default:
+                        break;
+                }
 
             } while (cki.Key != ConsoleKey.Escape);
             
