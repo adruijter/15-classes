@@ -38,30 +38,21 @@ namespace Classes
             do
             {                
                 cki = Console.ReadKey();
-                
-                /*
-                if (cki.Key == ConsoleKey.UpArrow)
-                {
-                    harry.ScorePlus(100);
-                }
-                if (cki.Key == ConsoleKey.DownArrow)
-                {
-                    harry.ScoreMinus(100);
-                }
-                if (cki.Key == ConsoleKey.U)
-                {
-                    Player.IncreaseAmountOfObjects();
-                }
-                if (cki.Key == ConsoleKey.D)
-                {
-                    Player.DecreaseAmountOfObjects();
-                } 
-                */
+               
                 switch (cki.Key)
                 {
                     case ConsoleKey.UpArrow:
                         harry.ScorePlus(100);
                         break;
+                    case ConsoleKey.DownArrow:
+                        harry.ScoreMinus(100);
+                        break;
+                    case ConsoleKey.U:
+                         Player.IncreaseAmountOfObjects();
+                         break;
+                    case ConsoleKey.D:
+                         Player.DecreaseAmountOfObjects();
+                         break;
                     default:
                         break;
                 }
