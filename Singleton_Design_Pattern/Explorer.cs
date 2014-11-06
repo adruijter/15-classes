@@ -10,6 +10,7 @@ namespace Singleton_Design_Pattern
         // Maak de twee private fields geschikt voor deze explorer class
         private string favoriteWeapon;
         private int killedMummies;
+        private static Explorer explorer;
 
         // Maak voor de twee bovenstaande fields twee properties(getter en setter)
         public string FavoriteWeapon
@@ -25,9 +26,20 @@ namespace Singleton_Design_Pattern
         }
 
         // Maak de constructor van deze class.
-        public Explorer()
+        private Explorer(string favoriteWeapon, int killedMummies)
         {
-
+            this.favoriteWeapon = favoriteWeapon;
+            this.killedMummies = killedMummies;
         }
+
+        public static Explorer createSingleInstance(string favoriteWeapon, int killedMummies)
+        {
+            if ( explorer == null)
+            {
+                explorer = new Explorer(favoriteWeapon, killedMummies);
+            }
+            return explorer;
+        }
+
     }
 }
