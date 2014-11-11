@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>1f5b5e38-9fa0-4fea-85a7-612f6b4cbdc7</ProjectGuid>
+    <ProjectGuid>{FEC1924C-3DB3-4DB3-B7A5-3E058AC15937}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OefenenMetClassesII</RootNamespace>
