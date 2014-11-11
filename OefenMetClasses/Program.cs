@@ -9,30 +9,18 @@ namespace OefenMetClasses
     {
         static void Main(string[] args)
         {
-            // Maak een class voor het maken van pizza's
-
-            /* Maak de volgende velden aan voor de class pizza
-             * Naam pizza
-             * Prijs pizza
-             * Manier van snijden
-             * wel of geen sauce
-             * array toppings
-             * hieropeten of takeaway
-             * temperatuur van de oven
-             * Aantal minuten kneden
-             */
- 
-            // Maak properties voor alle Fields (get en set)
            
+            Pizza margharita;
+            margharita = new Pizza("Margharita",
+                                    8.56f,
+                                    8,
+                                    false,
+                                    new string[] { "Basilicum", "Mozzarella" },
+                                    false,
+                                    395,
+                                    20);
 
-            // Maak een constructor die alle velden een beginwaarde kan geven (via de argumentenlijst)
-
-
-
-
-
-
-
+            margharita.Draw();
             Console.ReadLine();
         }
     }

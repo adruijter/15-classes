@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton_Design_Pattern", "Singleton_Design_Pattern\Singleton_Design_Pattern.csproj", "{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefenMetClasses", "OefenMetClasses\OefenMetClasses.csproj", "{88394258-906D-469C-9BC5-F847C07F7A41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}.Debug|x86.Build.0 = Debug|x86
 		{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}.Release|x86.ActiveCfg = Release|x86
 		{C48930EE-1F44-4D97-AE5E-C0CA671DF6FE}.Release|x86.Build.0 = Release|x86
+		{88394258-906D-469C-9BC5-F847C07F7A41}.Debug|x86.ActiveCfg = Debug|x86
+		{88394258-906D-469C-9BC5-F847C07F7A41}.Debug|x86.Build.0 = Debug|x86
+		{88394258-906D-469C-9BC5-F847C07F7A41}.Release|x86.ActiveCfg = Release|x86
+		{88394258-906D-469C-9BC5-F847C07F7A41}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
