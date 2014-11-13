@@ -22,6 +22,7 @@ namespace OefenenMetClassesII
             koffieLijst = new List<Coffee>();
             koffieLijst.Add(eersteKoffie = new Coffee());
             koffieLijst.Add(tweedeKoffie = new Coffee());
+            koffieLijst.Add(new Coffee());
             
             // Veranderen van koffie eigenschappen in de lijst
             koffieLijst[0].Cream = false;

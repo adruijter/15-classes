@@ -122,6 +122,7 @@ namespace OefenenMetClassesII
 
         private string CookieYesOrNO()
         {
+            //conditional operator (voorwaarde) ? (waarde als true): (waarde als false)
             return (this.cookie) ? "U krijgt een lekker koekje" : "";
         }
 
