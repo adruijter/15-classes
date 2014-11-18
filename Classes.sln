@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefenMetClasses", "OefenMet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefenenMetClassesII", "OefenenMetClassesII\OefenenMetClassesII.csproj", "{FEC1924C-3DB3-4DB3-B7A5-3E058AC15937}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OefenenMetClassesIII", "OefenenMetClassesIII\OefenenMetClassesIII.csproj", "{EAA26D66-808D-4F43-BA04-DA30E2A6643C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,6 +33,10 @@ Global
 		{FEC1924C-3DB3-4DB3-B7A5-3E058AC15937}.Debug|x86.Build.0 = Debug|x86
 		{FEC1924C-3DB3-4DB3-B7A5-3E058AC15937}.Release|x86.ActiveCfg = Release|x86
 		{FEC1924C-3DB3-4DB3-B7A5-3E058AC15937}.Release|x86.Build.0 = Release|x86
+		{EAA26D66-808D-4F43-BA04-DA30E2A6643C}.Debug|x86.ActiveCfg = Debug|x86
+		{EAA26D66-808D-4F43-BA04-DA30E2A6643C}.Debug|x86.Build.0 = Debug|x86
+		{EAA26D66-808D-4F43-BA04-DA30E2A6643C}.Release|x86.ActiveCfg = Release|x86
+		{EAA26D66-808D-4F43-BA04-DA30E2A6643C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
